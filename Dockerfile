@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install -y nodejs
 
 # Install tiddlywiki
-RUN npm install -g tiddlywiki
+RUN npm install -g tiddlywiki@5.1.11
 
 # Setup wiki volume
 VOLUME /var/lib/tiddlywiki
