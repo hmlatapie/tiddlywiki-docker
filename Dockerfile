@@ -1,11 +1,11 @@
-FROM ubuntu:16.04
+FROM node:7.9
 
 RUN apt-get update
 
 # Install npm
-RUN apt-get install -y software-properties-common curl
-RUN curl -sL https://deb.nodesource.com/setup_7.9.0 | bash -
-RUN apt-get install -y nodejs
+#RUN apt-get install -y software-properties-common curl
+#RUN curl -sL https://deb.nodesource.com/setup_7.9.0 | bash -
+#RUN apt-get install -y nodejs
 
 # Install tiddlywiki
 RUN npm install -g tiddlywiki@5.1.14
