@@ -1,4 +1,4 @@
-FROM node:7.9
+FROM node:latest
 
 RUN apt-get update
 
@@ -8,7 +8,7 @@ RUN apt-get update
 #RUN apt-get install -y nodejs
 
 # Install tiddlywiki
-RUN npm install -g tiddlywiki@5.1.14
+RUN npm install -g tiddlywiki@5.1.15
 
 # Setup wiki volume
 VOLUME /var/lib/tiddlywiki
